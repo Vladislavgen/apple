@@ -6,5 +6,6 @@ sudo python3 get-pip.py
 sudo pip3 install ansible --ignore-installed
 sudo pip3 install awscli --ignore-installed
 
-cd ~/Downloads/apple-Apple 
+cd ~/Downloads/apple-main
+#sudo ansible-playbook playbooks/osx-deploy.yml
 sudo ansible-playbook OfficePlaybook.yml
