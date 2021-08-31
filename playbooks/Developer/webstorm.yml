@@ -1,0 +1,13 @@
+---
+- hosts: local
+  become: yes
+  vars:
+    app_name: Webstorm
+    app_url: https://www.jetbrains.com/ru-ru/webstorm/download/download-thanks.html
+    installer_type: app
+    install_method: dmg
+    download_file_type: zip
+  roles:
+    - setup
+    - installer
+    - cleanup

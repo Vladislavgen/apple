@@ -1,0 +1,20 @@
+---
+# Keep Apps playbooks below
+- import_playbook : playbooks/Office/firefox.yml
+- import_playbook : playbooks/Office/GoogleChrome.yml
+- import_playbook : playbooks/Office/AnyDesk.yml
+- import_playbook : playbooks/Office/Signal.yml
+- import_playbook : playbooks/Office/Telegram.yml
+# - import_playbook : playbooks/Office/ThunderBird.yml
+- import_playbook : playbooks/Office/iTerm.yml
+- import_playbook : playbooks/Office/TunnelBlick.yml
+- import_playbook : playbooks/Office/SublimeText.yml
+# - import_playbook : playbooks/Office/Franz.yml
+# - import_playbook : playbooks/Office/LibreOffice.yml
+# - import_playbook : playbooks/Office/Teamviewer.yml
+- import_playbook : playbooks/Office/kickidler_g.yml
+
+- import_playbook : playbooks/osx-deploy.yml
+
+#- import_playbook : playbooks/Office/kickidler_v.yml
+# Keep Apps playbooks above

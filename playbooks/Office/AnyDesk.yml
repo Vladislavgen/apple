@@ -1,0 +1,13 @@
+---
+- hosts: local
+  become: yes
+  vars:
+    app_name: Anydesk
+    app_url: https://download.anydesk.com/anydesk.dmg?_ga=2.243175682.1070373888.1596835689-1895623450.1596835689
+    installer_type: app
+    install_method: dmg
+    download_file_type: dmg
+  roles:
+    - setup
+    - installer
+    - cleanup

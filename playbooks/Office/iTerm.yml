@@ -1,0 +1,14 @@
+---
+- name: Install iTerm
+  hosts: local
+  become: yes
+  vars:
+    app_name: iTerm
+    app_url: https://iterm2.com/downloads/stable/iTerm2-3_3_12.zip
+    installer_type: app
+    install_method: app
+    download_file_type: zip
+  roles: 
+    - setup
+    - installer
+    - cleanup

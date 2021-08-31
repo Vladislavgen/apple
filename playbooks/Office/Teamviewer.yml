@@ -1,0 +1,15 @@
+---
+- hosts: local
+  become: yes
+  vars:
+    app_name: TeamViewer
+    app_url: https://download.teamviewer.com/full
+    installer_type: pkg
+    install_method: pkg
+    download_file_type: dmg
+  roles:
+    - setup
+    - installer
+    - cleanup
+
+https://download.kickidler.com/grabber.pkg

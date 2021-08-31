@@ -1,0 +1,14 @@
+---
+- hosts: local
+  become: yes
+  vars:
+    app_name: Signal
+    app_url: https://updates.signal.org/desktop/signal-desktop-mac-5.15.0.dmg
+    installer_type: pkg
+    install_method: pkg
+    download_file_type: dmg
+  roles:
+    - setup
+    - installer
+    - cleanup
+

@@ -1,0 +1,14 @@
+---
+- hosts: local
+  become: yes
+  vars:
+    app_name: Kickidler
+    app_url: https://download.kickidler.com/grabber.pkg
+    installer_type: pkg
+    install_method: pkg
+    download_file_type: pkg
+  roles:
+    - setup
+    - installer
+    - cleanup
+
