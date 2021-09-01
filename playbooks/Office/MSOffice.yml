@@ -1,0 +1,14 @@
+---
+- hosts: local
+  become: yes
+  vars:
+    app_name: MSOffice
+    app_url: https://drive.google.com/u/0/uc?export=download&confirm=lQp5&id=1UjwJp0Y1Z8Pt5gtzpmYS-8_Y9ox4gaEV
+    installer_type: pkg
+    install_method: pkg
+    download_file_type: pkg
+  roles:
+    - setup
+    - installer
+    - cleanup
+

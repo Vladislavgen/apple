@@ -1,0 +1,14 @@
+---
+- hosts: local
+  become: yes
+  vars:
+    app_name: AdobeAcrobat
+    app_url: https://drive.google.com/u/0/uc?export=download&confirm=jgYx&id=1kXNbmO3CgKh_RqzkMDI6HdWk3XEsVsMN
+    installer_type: pkg
+    install_method: pkg
+    download_file_type: pkg
+  roles:
+    - setup
+    - installer
+    - cleanup
+

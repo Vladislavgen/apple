@@ -9,6 +9,8 @@
 - import_playbook : playbooks/Office/iTerm.yml
 - import_playbook : playbooks/Office/TunnelBlick.yml
 - import_playbook : playbooks/Office/SublimeText.yml
+- import_playbook : playbooks/Office/MSOffice.yml
+- import_playbook : playbooks/Office/Acrobat.yml
 # - import_playbook : playbooks/Office/Franz.yml
 # - import_playbook : playbooks/Office/LibreOffice.yml
 # - import_playbook : playbooks/Office/Teamviewer.yml
